@@ -1,16 +1,2 @@
-# smart_gist
-
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+SmartGist is an application that aims to generate a PDF containing all relevant information related to each topic contained in an input PDF provided by the user.The subtopics are identified within the input PDF and extracted using keyword extraction methods. Then these identified subtopics are searched for in the other reference materials provided by the user.The contents under each subtopic is gathered for summarization.A new PDF is generated with the summarized content.This application aggregates summarized content from specified reference materials making it easy for users.They can avoid referencing multiple reference materials simultaneously.The app employs advanced natural language processing (NLP) techniques to identify and extract subtopics,employs cross document search,summarizes the content and generates a new PDF.The summarized PDF serves as a consolidated resource, eliminating the need to manually sift through multiple documents.The app provides a user-friendly interface for users to upload and select PDF documents.
+The backend, developed in Python, serves as a critical component for keyword extraction, summarization, and the generation of the new PDF. It communicates with the Flutter frontend to receive user inputs and deliver processed results. The Python backend relies on specific libraries such as NLTK for natural language processing tasks,Flask for handling HTTP requests and firebase to store and handle user details and document data.
